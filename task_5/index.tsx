@@ -33,12 +33,14 @@ const ComponentTwo = () => {
             <span>ComponentTwo</span>
         </div>
     ) : (
-        <div>...Loading ComponentTwo</div>
+        null
     );
 };
 
 export default function Home() {
     const [showComponentTwo, setShowComponentTwo] = useState(false);
+
+
 
     return (
         <main className={styles.main}>
